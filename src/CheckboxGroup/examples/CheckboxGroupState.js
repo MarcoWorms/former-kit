@@ -47,10 +47,16 @@ class CheckboxGroupState extends React.Component {
 }
 
 CheckboxGroupState.propTypes = {
-  disabled: PropTypes.bool.isRequired,
-  error: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
+  error: PropTypes.string,
   name: PropTypes.string.isRequired,
-  success: PropTypes.string.isRequired,
+  success: PropTypes.string,
+}
+
+CheckboxGroupState.defaultProps = {
+  disabled: false,
+  error: null,
+  success: null,
 }
 
 export default CheckboxGroupState
