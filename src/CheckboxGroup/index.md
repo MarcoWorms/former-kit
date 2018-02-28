@@ -1,54 +1,23 @@
-Checkbox group example
-
+Checkbox group default state
 ```jsx
-class CheckboxGroupState extends React.Component {
-  constructor (props) {
-    super(props)
+  const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
+  <div><CheckboxGroupState name="default" /></div>
+```
 
-    this.state = { values: ['pagarme'] }
-  }
+Checkbox group disabled state
+```jsx
+  const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
+  <div><CheckboxGroupState name="disabled" disabled /></div>
+```
 
-  render () {
-    const options = [
-      {
-        label: 'Github',
-        value: 'Github',
-      },
-      {
-        label: 'Pagar.me',
-        value: 'pagarme',
-      },
-      {
-        label: 'Open source',
-        value: 'open-source',
-      },
-    ]
+Checkbox group success state
+```jsx
+  const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
+  <div><CheckboxGroupState name="success" success="Success!" /></div>
+```
 
-    const {
-      disabled,
-      error,
-      name,
-      success,
-    } = this.props
-
-    return (
-      <CheckboxGroup
-        disabled={disabled}
-        error={error}
-        name={name}
-        onChange={values => this.setState({ values })}
-        options={options}
-        success={success}
-        values={this.state.values}
-      />
-    )
-  }
-}
-
-<div>
-  <p><CheckboxGroupState name="default" /></p>
-  <p><CheckboxGroupState name="disabled" disabled /></p>
-  <p><CheckboxGroupState name="success" success="Success!" /></p>
-  <p><CheckboxGroupState name="error" error="Error!" /></p>
-</div>
+Checkbox group error state
+```jsx
+  const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
+  <div><CheckboxGroupState name="error" error="Error!" /></div>
 ```
