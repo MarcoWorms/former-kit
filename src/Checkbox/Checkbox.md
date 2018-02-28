@@ -1,38 +1,7 @@
+
 Default checkbox
 ```jsx
-const Checkbox = require('./index').default;
-
-class CheckState extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = { checked: false }
-  }
-
-  render () {
-    const {
-      label,
-      name,
-      success,
-      error,
-      disabled,
-    } = this.props
-
-    const { checked } = this.state
-
-    return (
-      <Checkbox
-        label={label}
-        name={name}
-        error={error}
-        disabled={disabled}
-        success={success}
-        checked={checked}
-        onChange={() => this.setState({ checked: !checked })}
-      />
-    )
-  }
-}
-
+const CheckState = require('./examples/CheckboxState').default;
 <div>
   <CheckState
     label="Example 1"
@@ -51,7 +20,6 @@ class CheckState extends React.Component {
     error="Erro!"
   />
 
-
   <CheckState
     label="Example 5"
     name="example5"
@@ -61,62 +29,38 @@ class CheckState extends React.Component {
 ```
 
 Form checkbox
+
 ```jsx
-const CheckboxForm = require('./form').default;
-
-class CheckState extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = { checked: false }
-  }
-
-  render () {
-    const {
-      label,
-      name,
-      success,
-      error,
-      disabled,
-    } = this.props
-
-    const { checked } = this.state
-
-    return (
-      <CheckboxForm
-        label={label}
-        name={name}
-        error={error}
-        disabled={disabled}
-        success={success}
-        checked={checked}
-        onChange={() => this.setState({ checked: !checked })}
-      />
-    )
-  }
-}
-
-<div>
-  <CheckboxForm
+const CheckboxFormState = require('./examples/CheckboxForm').default;
+  <CheckboxFormState
     label="Example 11"
     name="example11"
   />
+```
 
-  <CheckboxForm
+```jsx
+const CheckboxFormState = require('./examples/CheckboxForm').default;
+  <CheckboxFormState
     label="Example 12"
     name="example12"
     disabled
   />
+```
 
-  <CheckboxForm
+```jsx
+const CheckboxFormState = require('./examples/CheckboxForm').default;
+  <CheckboxFormState
     label="Example 13"
     name="example13"
     error="Error!"
   />
+```
 
-  <CheckboxForm
+```jsx
+const CheckboxFormState = require('./examples/CheckboxForm').default;
+  <CheckboxFormState
     label="Example 14"
     name="example14"
     success="Success!"
   />
-</div>
 ```
