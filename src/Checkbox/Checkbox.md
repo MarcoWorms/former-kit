@@ -1,35 +1,48 @@
 
-Default checkbox
+<h4>**Default checkbox**</h4>
+
+Default state
 ```jsx
-const CheckState = require('./examples/CheckboxState').default;
-<div>
+  const CheckState = require('./examples/CheckboxState').default;
   <CheckState
     label="Example 1"
     name="example1"
   />
+```
 
+Disabled state
+```jsx
+  const CheckState = require('./examples/CheckboxState').default;
   <CheckState
     label="Example 2"
     name="example2"
     disabled
   />
+```
 
+Error state
+```jsx
+  const CheckState = require('./examples/CheckboxState').default;
   <CheckState
     label="Example 4"
     name="example4"
-    error="Erro!"
+    error="Error!"
   />
+```
 
+Success state
+```jsx
+  const CheckState = require('./examples/CheckboxState').default;
   <CheckState
     label="Example 5"
     name="example5"
     success="Success!"
   />
-</div>
 ```
 
-Form checkbox
+<h4>**Form checkbox**</h4>
 
+Default state
 ```jsx
 const CheckboxFormState = require('./examples/CheckboxForm').default;
   <CheckboxFormState
@@ -38,6 +51,7 @@ const CheckboxFormState = require('./examples/CheckboxForm').default;
   />
 ```
 
+Disabled state
 ```jsx
 const CheckboxFormState = require('./examples/CheckboxForm').default;
   <CheckboxFormState
@@ -47,6 +61,7 @@ const CheckboxFormState = require('./examples/CheckboxForm').default;
   />
 ```
 
+Error state
 ```jsx
 const CheckboxFormState = require('./examples/CheckboxForm').default;
   <CheckboxFormState
@@ -56,6 +71,7 @@ const CheckboxFormState = require('./examples/CheckboxForm').default;
   />
 ```
 
+Success state
 ```jsx
 const CheckboxFormState = require('./examples/CheckboxForm').default;
   <CheckboxFormState
