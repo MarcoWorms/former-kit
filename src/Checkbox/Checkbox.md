@@ -1,5 +1,5 @@
-<h3>__Default checkbox__</h3>
-<h4>**States**</h4>
+### __Default checkbox__ ###
+#### **States** ####
 
 Default
 ```jsx
@@ -40,8 +40,8 @@ Success
   />
 ```
 
-<h3>__Form checkbox__</h3>
-<h4>**States**</h4>
+### __Form checkbox__ ###
+#### **States** ####
 
 Default
 ```jsx

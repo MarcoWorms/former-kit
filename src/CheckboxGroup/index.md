@@ -1,22 +1,24 @@
-Default state
+#### **State** ####
+
+Default
 ```jsx
   const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
   <div><CheckboxGroupState name="default" /></div>
 ```
 
-Disabled state
+Disabled
 ```jsx
   const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
   <div><CheckboxGroupState name="disabled" disabled /></div>
 ```
 
-Success state
+Success
 ```jsx
   const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
   <div><CheckboxGroupState name="success" success="Success!" /></div>
 ```
 
-Error state
+Error
 ```jsx
   const CheckboxGroupState = require('./examples/CheckboxGroupState').default;
   <div><CheckboxGroupState name="error" error="Error!" /></div>

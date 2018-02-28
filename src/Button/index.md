@@ -1,4 +1,6 @@
-The default button looks like this:
+#### **Examples** ####
+
+]The default button looks like this:
 ```jsx
 <Button>Call to action</Button>
 ```
