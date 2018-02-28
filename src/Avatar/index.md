@@ -1,3 +1,5 @@
+<h4>**Examples**</h4>
+
 Default
 ```jsx
 <Avatar />
